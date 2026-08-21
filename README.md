@@ -95,6 +95,8 @@ Windows Client
 </td>
 <td>
 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt="REST API" width="40" height="40">
+
 **REST API**
 
 </td>
@@ -128,6 +130,8 @@ Windows Client
 
 </td>
 <td>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON" width="40" height="40">
       
 **JSON / JSONL**
 
@@ -140,7 +144,7 @@ Windows Client
 
 </td>
 <td>
-      
+
 **Interactive Charts**
 
 </td>
@@ -155,12 +159,14 @@ Windows Client
       Reporting & Export
 </td>
 
+<td colspan=5>
+      Application
+</td>
+
 <td colspan=3>
       Development Tools
 </td>
-<td colspan=4>
-      Application
-</td>
+
 </tr>
 
 <tr>
@@ -178,25 +184,7 @@ Windows Client
 
 **Telemetry Reports**
 </td>
-<td>
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="40" height="40">
-
-**Git**
-
-</td>
-<td>
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="40" height="40">
-
-**GitHub**
-
-</td>
-<td>
-
-**Visual Studio Code**
-</td>
-<td>
+<td colspan=2>
 
 **Windows Telemetry**
 
@@ -216,6 +204,27 @@ Windows Client
 **PDF Export**
 
 </td>
+<td>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="40" height="40">
+
+**Git**
+
+</td>
+<td>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="40" height="40">
+
+**GitHub**
+
+</td>
+<td>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height=40>
+
+**VSCode**
+</td>
+
 </tr>
 </table>
 
