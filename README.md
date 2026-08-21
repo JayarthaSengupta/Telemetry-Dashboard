@@ -495,7 +495,7 @@ Before using it in a production environment, additional security controls should
 
 ---
 
-## Future Improvements
+## Possible Extensions
 
 Potential extensions include:
 
