@@ -1,0 +1,139 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background: #f8f9fa;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    max-width: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+
+.content {
+    width: 85%;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.chart-pie {
+    width: 400px;
+    height: 300px;
+}
+
+.chart-box {
+    width: 500px;
+    height: 350px;
+}
+
+.chart-pie canvas,
+.chart-box canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.telemetry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.safe {
+    color: green;
+    font-weight: bold;
+}
+
+.unsafe {
+    color: red;
+    font-weight: bold;
+}
+
+.invalid {
+    color: orange;
+    font-weight: bold;
+}
+
+#summary-text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
