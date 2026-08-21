@@ -62,28 +62,164 @@ Windows Client
 └──────────────────────────┘
 ```
 
+
 ## Technology Stack
 
-### Backend
+<table width="100%">
+<tr>
+<td colspan=3>
+      Backend
+</td>
+<td colspan=5>
+      Frontend
+</td>
+<td colspan=3>
+      Data & Visualization
+</td>
+</tr>
 
-* Python
-* Flask
-* JSON / JSONL
+<tr>
+<td>
+      
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" height="40">
 
-### Frontend
+**Python**
 
-* HTML5
-* CSS3
-* JavaScript
-* Bootstrap 5
-* Chart.js
-* html2pdf.js
+</td>
+<td>
 
-### Development Tools
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" width="40" height="40">
 
-* Git
-* GitHub
-* Visual Studio Code
+**Flask**  
+
+</td>
+<td>
+
+**REST API**
+
+</td>
+
+<td>
+      
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height="40">
+
+**HTML5**
+
+</td>
+<td>
+      
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40">
+
+**CSS3**
+
+</td>
+<td>
+      
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40">
+
+**JavaScript**
+
+</td>
+<td>
+      
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="40" height="40">
+
+**Bootstrap 5**
+
+</td>
+<td>
+      
+**JSON / JSONL**
+
+</td>
+<td>
+
+<img src="https://www.chartjs.org/img/chartjs-logo.svg" width="45" height="45">
+
+**Chart.js**
+
+</td>
+<td>
+      
+**Interactive Charts**
+
+</td>
+<td>
+
+**Telemetry Analytics**
+</td>
+</tr>
+
+<tr>
+<td colspan=3>
+      Reporting & Export
+</td>
+
+<td colspan=3>
+      Development Tools
+</td>
+<td colspan=4>
+      Application
+</td>
+</tr>
+
+<tr>
+<td>
+
+**html2pdf.js**
+
+</td>
+<td>
+
+**PDF Generation**
+
+</td>
+<td>
+
+**Telemetry Reports**
+</td>
+<td>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="40" height="40">
+
+**Git**
+
+</td>
+<td>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="40" height="40">
+
+**GitHub**
+
+</td>
+<td>
+
+**Visual Studio Code**
+</td>
+<td>
+
+**Windows Telemetry**
+
+</td>
+<td>
+
+**REST Endpoints**
+
+</td>
+<td>
+
+**JSONL Storage**
+
+</td>
+<td>
+
+**PDF Export**
+
+</td>
+</tr>
+</table>
+
+
 
 ## Project Structure
 
@@ -109,12 +245,22 @@ The telemetry log file is intentionally excluded from version control because it
 
 ## Installation
 
+<table>
+<tr>
+<td colspan=3>
+
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/JayarthaSengupta/Telemetry-Dashboard.git
 cd Telemetry-Dashboard
 ```
+
+
+</td>
+</tr>
+<tr>
+<td>
 
 ### 2. Create a virtual environment
 
@@ -130,12 +276,18 @@ Activate it:
 venv\Scripts\activate
 ```
 
+</td>
+<td>
+
 ### 3. Install dependencies
 
 ```powershell
 pip install -r requirements.txt
 ```
 
+</td>
+<td>
+      
 ### 4. Run the application
 
 ```powershell
@@ -150,11 +302,26 @@ http://localhost:8080
 
 Open that address in a browser to access the dashboard.
 
+</td>
+</tr>
+</table>
+
+---
+
 ## API Endpoints
+
+<table>
+<tr>
+<td colspan=2>
 
 ### `GET /`
 
 Returns the telemetry dashboard.
+
+</td>
+</tr>
+<tr>
+<td>
 
 ### `POST /telemetry`
 
@@ -171,6 +338,9 @@ Example request:
     "safe": true
 }
 ```
+
+</td>
+<td>
 
 ### `GET /data`
 
@@ -190,6 +360,12 @@ Example response:
 ]
 ```
 
+</td>
+</tr>
+</table>
+
+---
+
 ## Safety Classification
 
 Each telemetry operation is categorized into one of three states:
@@ -202,17 +378,35 @@ Each telemetry operation is categorized into one of three states:
 
 The dashboard calculates the total number of operations in each category and visualizes the distribution using Chart.js.
 
+---
+
 ## Dashboard
 
 The dashboard provides:
 
+<table>
+<tr>
+<td>
+
 * Operation Safety Distribution
 * Operation Safety Count
 * Total Safe operations
+
+</td>
+<td>
+
 * Total Unsafe operations
 * Invalid telemetry records
+
+</td>
+<td>
+
 * Detailed telemetry table
 * PDF report generation
+
+</td>
+</tr>
+</table>
 
 ## Data Storage
 
@@ -226,50 +420,87 @@ telemetry_log.jsonl
 
 The file is excluded from Git using `.gitignore` to prevent telemetry records from being accidentally committed to the repository.
 
+---
+
 ## Security Considerations
 
 This project is intended as a demonstration and development project.
 
-Before using it in a production environment, additional security controls should be implemented, including:
+Before using it in a production environment, additional security controls should be implemented, including, but not limited to:
 
-* Authentication and authorization
-* HTTPS
-* Input validation
-* Rate limiting
-* Secure telemetry transmission
-* Database-backed storage
-* Access control
-* Log rotation
-* Protection of personally identifiable information
-* Production WSGI deployment instead of Flask's development server
+<table>
+<tr>
+<td>
+
+- Authentication & Authorization
+- HTTPS
+- Input Validation
+
+</td>
+<td>
+
+- Rate Limiting
+- Secure Telemetry Transmission
+- Database-backed Storage
+
+</td>
+<td>
+
+- Access Control
+- Log Rotation
+- PII Protection
+- Production WSGI Deployment
+
+</td>
+</tr>
+</table>
+
+---
 
 ## Future Improvements
 
 Potential extensions include:
 
+
+<table>
+<tr>
+<td>
+
 * Real-time WebSocket telemetry
 * PostgreSQL or MySQL storage
 * User authentication
 * Advanced filtering and search
+
+</td>
+<td>
+
 * Pagination for large telemetry datasets
 * Date-range analytics
 * Threat detection
 * Anomaly detection
+
+</td>
+<td>
+
 * Windows client integration
 * Docker deployment
 * Role-based access control
 * Production monitoring and logging
 
+</td>
+</tr>
+</table>
+
+---
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
 
 ## Author
 
 **Jayartha Sengupta**
 
-<<<<<<< HEAD
 GitHub: [JayarthaSengupta](https://github.com/JayarthaSengupta)
-=======
-GitHub: [JayarthaSengupta](https://github.com/JayarthaSengupta)
->>>>>>> db82bd5e42ff6d631e416aece8bf0342774de9b8
