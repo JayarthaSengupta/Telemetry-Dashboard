@@ -19,48 +19,36 @@ The system provides a web-based interface for monitoring telemetry events, class
 
 ## Features
 
+<table>
+<tr>
+<td>
+
 * Receive telemetry data through a REST API
 * Store telemetry events in JSON Lines (`.jsonl`) format
 * Display telemetry data in a web dashboard
 * Automatic dashboard refresh every 5 seconds
+* Export telemetry data to PDF
+* Flask-based backend with REST endpoints
+</td>
+<td>
+
 * Safe / Unsafe / Invalid operation classification
 * Interactive pie chart for safety distribution
 * Interactive bar chart for operation counts
 * Timestamp formatting for telemetry records
-* Export telemetry data to PDF
 * Responsive dashboard layout using Bootstrap
-* Flask-based backend with REST endpoints
+
+</td>
+</tr>
+</table>
+
+
+
+
 
 ## System Architecture
 
-```text
-Windows Client
-      │
-      │ POST /telemetry
-      ▼
-┌───────────────────┐
-│   Flask Backend   │
-│      app.py       │
-└─────────┬─────────┘
-          │
-          ▼
- telemetry_log.jsonl
-          │
-          │ GET /data
-          ▼
-┌──────────────────────────┐
-│    Web Dashboard         │
-│                          │
-│  ┌────────┐ ┌─────────┐  │
-│  │  Pie   │ │   Bar   │  │
-│  │ Chart  │ │  Chart  │  │
-│  └────────┘ └─────────┘  │
-│                          │
-│      Telemetry Table     │
-│                          │
-│       PDF Export         │
-└──────────────────────────┘
-```
+![Telemetry_Workflow](docs/images/Telemetry_Workflow.png)
 
 
 ## Technology Stack
@@ -374,22 +362,63 @@ Example response:
 </table>
 
 ---
+<table>
+<tr>
+<td>
 
-## Safety Classification
+**Safety Classification**
 
+</td>
+<td>
+
+**Dashboard**
+
+</td>
+</tr>
+<tr>
+<td>
+      
 Each telemetry operation is categorized into one of three states:
 
-| Status     | Description                        |
-| ---------- | ---------------------------------- |
-| ✅ Safe     | Operation is marked as safe        |
-| ❌ Unsafe   | Operation is marked as unsafe      |
-| ⚠️ Invalid | Safety value is missing or invalid |
+<table>
+<tr>
+<td>
+
+Status 
+
+</td>
+<td>
+
+Description
+
+</td>
+</tr>
+<tr>
+<td>
+
+✅ Safe
+
+❌ Unsafe
+
+⚠️ Invalid
+
+</td>
+<td>
+
+Operation is marked as safe
+
+Operation is marked as unsafe
+
+Safety value is missing or invalid
+
+</td>
+</tr>
+</table>
 
 The dashboard calculates the total number of operations in each category and visualizes the distribution using Chart.js.
 
----
-
-## Dashboard
+</td>
+<td>
 
 The dashboard provides:
 
@@ -406,12 +435,12 @@ The dashboard provides:
 
 * Total Unsafe operations
 * Invalid telemetry records
-
-</td>
-<td>
-
 * Detailed telemetry table
 * PDF report generation
+
+</td>
+</tr>
+</table>
 
 </td>
 </tr>
