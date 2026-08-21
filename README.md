@@ -268,4 +268,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 **Jayartha Sengupta**
 
+<<<<<<< HEAD
 GitHub: [JayarthaSengupta](https://github.com/JayarthaSengupta)
+=======
+GitHub: [JayarthaSengupta](https://github.com/JayarthaSengupta)
+>>>>>>> db82bd5e42ff6d631e416aece8bf0342774de9b8
